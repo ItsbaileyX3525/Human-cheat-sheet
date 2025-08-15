@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Human Cheat Sheet</title>
+    <link rel="stylesheet" href="/assets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">CODEX</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="patterns.html" class="nav-link">Patterns</a>
+            <a href="data.html" class="nav-link">Data</a>
+        </div>
+    </nav>
+
+    <div class="cursor-trail"></div>
+    <div class="preference-bubbles"></div>
+    
+    <div class="container">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="glitch-text" data-text="HUMAN.PREFERENCES">
+                    HUMAN.PREFERENCES
+                </div>
+                <p class="subtitle">Decoding what 8 billion humans actually want</p>
+                
+                <div class="hero-stats">
+                    <div class="quick-stat">
+                        <span class="stat-num">70°F</span>
+                        <span class="stat-desc">Perfect temp</span>
+                    </div>
+                    <div class="quick-stat">
+                        <span class="stat-num">73%</span>
+                        <span class="stat-desc">Pizza > Salad</span>
+                    </div>
+                    <div class="quick-stat">
+                        <span class="stat-num">84%</span>
+                        <span class="stat-desc">Simple choices</span>
+                    </div>
+                </div>
+                
+                <button class="cta-button" onclick="startJourney()">
+                    EXPLORE DATA
+                </button>
+            </div>
+        </section>
+
+        <section class="interactive-hub">
+            <div class="hub-grid">
+                <div class="hub-card temp-card">
+                    <h3>Temperature Preference</h3>
+                    <div class="mini-temp-control">
+                        <input type="range" id="tempSlider" min="60" max="80" value="70" class="temp-slider">
+                        <div class="temp-display"><span id="tempValue">70</span>°F</div>
+                    </div>
+                    <div class="comfort-indicator" id="comfortIndicator">Perfect Zone</div>
+                </div>
+                
+                <div class="hub-card wheel-card">
+                    <h3>Preference Spinner</h3>
+                    <div class="mini-wheel" id="miniWheel" onclick="spinWheel()">
+                        <div class="wheel-pointer">→</div>
+                    </div>
+                    <div class="spin-result" id="spinResult">Click to spin!</div>
+                </div>
+                
+                <div class="hub-card mood-card">
+                    <h3>Color Psychology</h3>
+                    <div class="mood-buttons">
+                        <button class="mood-btn active" data-mood="calm">😌</button>
+                        <button class="mood-btn" data-mood="energetic">⚡</button>
+                        <button class="mood-btn" data-mood="focused">🎯</button>
+                        <button class="mood-btn" data-mood="creative">🎨</button>
+                    </div>
+                    <div class="mini-palette" id="miniPalette"></div>
+                </div>
+                
+                <div class="hub-card stats-card">
+                    <h3>Live Counter</h3>
+                    <div class="live-stats">
+                        <div class="live-stat">
+                            <div class="counter" data-target="4.2">0</div>
+                            <div class="counter-label">Billion prefer music</div>
+                        </div>
+                        <div class="live-stat">
+                            <div class="counter" data-target="89">0</div>
+                            <div class="counter-label">% value comfort</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-insights">
+            <h2 class="section-title">Key Human Preferences</h2>
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <div class="insight-icon">🏠</div>
+                    <div class="insight-text">
+                        <strong>76%</strong> prefer small gatherings over large crowds
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">🌅</div>
+                    <div class="insight-text">
+                        <strong>91%</strong> feel better with natural light exposure
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">😊</div>
+                    <div class="insight-text">
+                        <strong>78%</strong> prefer stories with happy endings
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">🎭</div>
+                    <div class="insight-text">
+                        <strong>84%</strong> choose simple over complex options
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="easter-modal" id="easterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Easter Egg Statistics</h2>
+                <button class="modal-close" onclick="closeEasterModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="easter-fact">
+                    <h3>Did you know?</h3>
+                    <p><strong>73%</strong> of gamers actively look for easter eggs in games and websites</p>
+                    <p><strong>89%</strong> of people feel satisfied when they discover hidden features</p>
+                    <p><strong>45%</strong> of developers include easter eggs in their projects</p>
+                </div>
+                <div class="easter-achievement">
+                    <div class="achievement-badge">🏆</div>
+                    <div class="achievement-text">
+                        <strong>Achievement Unlocked!</strong><br>
+                        "Konami Code Master" - You found the secret!
+                    </div>
+                </div>
+                <div class="easter-tip">
+                    <em>Pro tip: Try Ctrl+S to spin the wheel from anywhere!</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/asses/index.js"></script>
+</body>
+</html>
