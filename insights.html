@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights - Human Preference Codex</title>
+    <link rel="stylesheet" href="assets/insights.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">CODEX</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="insights.html" class="nav-link active">Insights</a>
+            <a href="patterns.html" class="nav-link">Patterns</a>
+            <a href="data.html" class="nav-link">Data</a>
+        </div>
+    </nav>
+
+    <div class="cursor-trail"></div>
+    <div class="preference-bubbles"></div>
+
+    <div class="container">
+        <section class="page-hero">
+            <h1 class="page-title">Human Insights</h1>
+            <p class="page-subtitle">Deep dive into what drives human preferences</p>
+        </section>
+
+        <section class="insights-detailed">
+            <div class="insight-category">
+                <h2>Psychology-Based Preferences</h2>
+                <div class="insight-cards">
+                    <div class="insight-card">
+                        <div class="card-stat">87%</div>
+                        <h3>Loss Aversion</h3>
+                        <p>People hate losing something twice as much as they enjoy gaining it</p>
+                        <div class="card-visual">
+                            <div class="loss-gain-demo">
+                                <div class="loss">-$50</div>
+                                <div class="gain">+$50</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-card">
+                        <div class="card-stat">92%</div>
+                        <h3>Social Proof</h3>
+                        <p>Decisions influenced by what others are doing</p>
+                        <div class="card-visual">
+                            <div class="social-demo">
+                                <div class="crowd">👥👥👥</div>
+                                <div class="arrow">→</div>
+                                <div class="follow">🚶</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-card">
+                        <div class="card-stat">76%</div>
+                        <h3>Anchoring Effect</h3>
+                        <p>First number seen influences all subsequent judgments</p>
+                        <div class="card-visual">
+                            <div class="anchor-demo">
+                                <div class="first-price">$100</div>
+                                <div class="final-price">$75 ✓</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insight-category">
+                <h2>Behavioral Patterns</h2>
+                <div class="behavior-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Initial Reaction</h3>
+                            <p><strong>0.3 seconds:</strong> First impression formed</p>
+                            <div class="stat-bar"><div class="fill" style="width: 30%"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>Decision Making</h3>
+                            <p><strong>3-7 seconds:</strong> Most choices made</p>
+                            <div class="stat-bar"><div class="fill" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Commitment</h3>
+                            <p><strong>15+ seconds:</strong> Deeper evaluation begins</p>
+                            <div class="stat-bar"><div class="fill" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insight-category">
+                <h2>Cultural Variations</h2>
+                <div class="world-map-stats">
+                    <div class="region-stat">
+                        <h3>North America</h3>
+                        <div class="region-preferences">
+                            <div class="pref">Individual choice: <strong>89%</strong></div>
+                            <div class="pref">Fast decisions: <strong>76%</strong></div>
+                            <div class="pref">Direct communication: <strong>82%</strong></div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-stat">
+                        <h3>East Asia</h3>
+                        <div class="region-preferences">
+                            <div class="pref">Group consensus: <strong>91%</strong></div>
+                            <div class="pref">Deliberate decisions: <strong>83%</strong></div>
+                            <div class="pref">Context-aware: <strong>94%</strong></div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-stat">
+                        <h3>Europe</h3>
+                        <div class="region-preferences">
+                            <div class="pref">Quality focus: <strong>88%</strong></div>
+                            <div class="pref">Sustainability: <strong>79%</strong></div>
+                            <div class="pref">Tradition respect: <strong>71%</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/insights.js"></script>
+</body>
+</html>
