@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns - Human Cheat Sheet</title>
+    <link rel="stylesheet" href="/assets/patterns.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">CODEX</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="patterns.html" class="nav-link active">Patterns</a>
+            <a href="data.html" class="nav-link">Data</a>
+        </div>
+    </nav>
+
+    <div class="cursor-trail"></div>
+    <div class="preference-bubbles"></div>
+
+    <div class="container">
+        <section class="page-hero">
+            <h1 class="page-title">Decision Patterns</h1>
+            <p class="page-subtitle">How humans make choices across different scenarios</p>
+        </section>
+
+        <section class="patterns-analysis">
+            <div class="pattern-section">
+                <h2>The Default Effect</h2>
+                <div class="pattern-demo-large">
+                    <div class="demo-scenario">
+                        <h3>Scenario: Software Installation</h3>
+                        <div class="choice-simulation">
+                            <div class="choice-option default-selected">
+                                <input type="checkbox" checked disabled>
+                                <span>Install recommended plugins (Default)</span>
+                                <div class="choice-percentage">78% choose this</div>
+                            </div>
+                            <div class="choice-option">
+                                <input type="checkbox" disabled>
+                                <span>Custom installation</span>
+                                <div class="choice-percentage">22% choose this</div>
+                            </div>
+                        </div>
+                        <div class="pattern-explanation">
+                            Most people stick with pre-selected options, even when alternatives might be better for them.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-section">
+                <h2>Analysis Paralysis</h2>
+                <div class="paralysis-demo">
+                    <div class="choice-count-test">
+                        <div class="choice-scenario">
+                            <h4>2 Options</h4>
+                            <div class="decision-time">2.3 seconds</div>
+                            <div class="satisfaction">89% satisfied</div>
+                        </div>
+                        <div class="choice-scenario">
+                            <h4>5 Options</h4>
+                            <div class="decision-time">8.7 seconds</div>
+                            <div class="satisfaction">74% satisfied</div>
+                        </div>
+                        <div class="choice-scenario">
+                            <h4>12+ Options</h4>
+                            <div class="decision-time">25+ seconds</div>
+                            <div class="satisfaction">52% satisfied</div>
+                        </div>
+                    </div>
+                    <div class="pattern-insight">
+                        <strong>Sweet Spot:</strong> 3-7 options maximize both decision speed and satisfaction
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-section">
+                <h2>The Paradox of Choice</h2>
+                <div class="paradox-visualization">
+                    <div class="choice-pyramid">
+                        <div class="pyramid-level" data-level="1">
+                            <div class="level-label">1 Choice</div>
+                            <div class="satisfaction-meter" style="--satisfaction: 45%">45% Happy</div>
+                        </div>
+                        <div class="pyramid-level" data-level="3">
+                            <div class="level-label">3 Choices</div>
+                            <div class="satisfaction-meter" style="--satisfaction: 89%">89% Happy</div>
+                        </div>
+                        <div class="pyramid-level" data-level="10">
+                            <div class="level-label">10+ Choices</div>
+                            <div class="satisfaction-meter" style="--satisfaction: 62%">62% Happy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-section">
+                <h2>Emotional Decision Making</h2>
+                <div class="emotion-patterns">
+                    <div class="emotion-chart">
+                        <div class="emotion-item">
+                            <div class="emotion-label">Happy Mood</div>
+                            <div class="decision-type">More risk-taking (+34%)</div>
+                            <div class="decision-speed">Faster decisions (-23%)</div>
+                        </div>
+                        <div class="emotion-item">
+                            <div class="emotion-label">Anxious Mood</div>
+                            <div class="decision-type">Conservative choices (+67%)</div>
+                            <div class="decision-speed">Slower decisions (+41%)</div>
+                        </div>
+                        <div class="emotion-item">
+                            <div class="emotion-label">Frustrated</div>
+                            <div class="decision-type">Impulsive choices (+89%)</div>
+                            <div class="decision-speed">Quick decisions (-56%)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-section">
+                <h2>Time-Based Patterns</h2>
+                <div class="time-patterns">
+                    <div class="time-chart">
+                        <div class="time-period">
+                            <div class="time-label">Morning (6-10 AM)</div>
+                            <div class="decision-quality">Analytical decisions</div>
+                            <div class="pattern-bar" style="--width: 89%">89%</div>
+                        </div>
+                        <div class="time-period">
+                            <div class="time-label">Afternoon (12-4 PM)</div>
+                            <div class="decision-quality">Balanced decisions</div>
+                            <div class="pattern-bar" style="--width: 76%">76%</div>
+                        </div>
+                        <div class="time-period">
+                            <div class="time-label">Evening (6-10 PM)</div>
+                            <div class="decision-quality">Emotional decisions</div>
+                            <div class="pattern-bar" style="--width: 92%">92%</div>
+                        </div>
+                        <div class="time-period">
+                            <div class="time-label">Late Night (10+ PM)</div>
+                            <div class="decision-quality">Impulsive decisions</div>
+                            <div class="pattern-bar" style="--width: 67%">67%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-pattern-test">
+            <h2>Test Your Own Patterns</h2>
+            <div class="pattern-test">
+                <div class="test-scenario">
+                    <h3>Quick Choice Test</h3>
+                    <p>Which would you choose for lunch?</p>
+                    <div class="test-options">
+                        <button class="test-option" data-type="default">Today's Special (Recommended)</button>
+                        <button class="test-option" data-type="simple">Simple Sandwich</button>
+                        <button class="test-option" data-type="complex">Build Your Own (20+ options)</button>
+                    </div>
+                    <div class="test-result" id="patternResult"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/assets/patterns.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data - Human Cheat Sheet</title>
+    <link rel="stylesheet" href="assets/data.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">CODEX</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="insights.html" class="nav-link">Insights</a>
+            <a href="patterns.html" class="nav-link">Patterns</a>
+            <a href="data.html" class="nav-link active">Data</a>
+        </div>
+    </nav>
+
+    <div class="cursor-trail"></div>
+    <div class="preference-bubbles"></div>
+
+    <div class="container">
+        <section class="page-hero">
+            <h1 class="page-title">Raw Data</h1>
+            <p class="page-subtitle">Interactive visualizations and detailed statistics</p>
+        </section>
+
+        <section class="data-dashboard">
+            <div class="dashboard-grid">
+                <div class="data-widget radar-widget">
+                    <h3>Preference Radar</h3>
+                    <div class="mini-radar-container">
+                        <canvas id="dataRadar" width="200" height="200"></canvas>
+                        <div class="radar-controls-mini">
+                            <button class="radar-btn-mini active" data-category="food">Food</button>
+                            <button class="radar-btn-mini" data-category="music">Music</button>
+                            <button class="radar-btn-mini" data-category="entertainment">TV</button>
+                            <button class="radar-btn-mini" data-category="lifestyle">Life</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-widget stats-widget">
+                    <h3>Live Statistics</h3>
+                    <div class="live-counters">
+                        <div class="live-counter">
+                            <div class="counter-number" data-target="147">0</div>
+                            <div class="counter-desc">Studies analyzed</div>
+                        </div>
+                        <div class="live-counter">
+                            <div class="counter-number" data-target="62">0</div>
+                            <div class="counter-desc">Countries surveyed</div>
+                        </div>
+                        <div class="live-counter">
+                            <div class="counter-number" data-target="2.4">0</div>
+                            <div class="counter-desc">Million participants</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-widget temperature-widget">
+                    <h3>Global Temperature Preferences</h3>
+                    <div class="temp-distribution">
+                        <div class="temp-bar" data-temp="65°F" style="--height: 12%">12%</div>
+                        <div class="temp-bar" data-temp="68°F" style="--height: 34%">34%</div>
+                        <div class="temp-bar" data-temp="70°F" style="--height: 78%">78%</div>
+                        <div class="temp-bar" data-temp="72°F" style="--height: 89%">89%</div>
+                        <div class="temp-bar" data-temp="75°F" style="--height: 45%">45%</div>
+                        <div class="temp-bar" data-temp="78°F" style="--height: 23%">23%</div>
+                    </div>
+                    <div class="temp-optimal">Optimal: 70-72°F</div>
+                </div>
+
+                <div class="data-widget choice-widget">
+                    <h3>Choice Complexity Impact</h3>
+                    <div class="complexity-chart">
+                        <div class="complexity-point" style="--x: 10%; --y: 90%">
+                            <div class="point-label">2 choices<br>Fast & Happy</div>
+                        </div>
+                        <div class="complexity-point" style="--x: 30%; --y: 95%">
+                            <div class="point-label">3-5 choices<br>Optimal Zone</div>
+                        </div>
+                        <div class="complexity-point" style="--x: 70%; --y: 60%">
+                            <div class="point-label">10+ choices<br>Analysis Paralysis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detailed-data">
+            <h2>Comprehensive Statistics</h2>
+            
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Preference Category</th>
+                            <th>Primary Choice</th>
+                            <th>Percentage</th>
+                            <th>Sample Size</th>
+                            <th>Confidence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Food</td>
+                            <td>Sweet > Salty > Bitter</td>
+                            <td>73%</td>
+                            <td>340,000</td>
+                            <td>±2.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Music</td>
+                            <td>Music > Silence</td>
+                            <td>84%</td>
+                            <td>180,000</td>
+                            <td>±2.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Temperature</td>
+                            <td>70-72°F optimal</td>
+                            <td>78%</td>
+                            <td>220,000</td>
+                            <td>±1.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Social</td>
+                            <td>Small groups > Crowds</td>
+                            <td>76%</td>
+                            <td>150,000</td>
+                            <td>±3.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Lighting</td>
+                            <td>Natural > Artificial</td>
+                            <td>91%</td>
+                            <td>95,000</td>
+                            <td>±2.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Stories</td>
+                            <td>Happy endings preferred</td>
+                            <td>78%</td>
+                            <td>120,000</td>
+                            <td>±2.7%</td>
+                        </tr>
+                        <tr>
+                            <td>Choices</td>
+                            <td>Simple > Complex</td>
+                            <td>84%</td>
+                            <td>200,000</td>
+                            <td>±2.0%</td>
+                        </tr>
+                        <tr>
+                            <td>Decisions</td>
+                            <td>Default options chosen</td>
+                            <td>78%</td>
+                            <td>280,000</td>
+                            <td>±1.8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="methodology">
+            <h2>Research Methodology</h2>
+            <div class="method-grid">
+                <div class="method-card">
+                    <h3>Data Collection</h3>
+                    <ul>
+                        <li>Online surveys (45%)</li>
+                        <li>Laboratory studies (30%)</li>
+                        <li>Field observations (15%)</li>
+                        <li>Meta-analyses (10%)</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <h3>Global Coverage</h3>
+                    <ul>
+                        <li>North America: 28%</li>
+                        <li>Europe: 24%</li>
+                        <li>Asia: 31%</li>
+                        <li>Other regions: 17%</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <h3>Demographics</h3>
+                    <ul>
+                        <li>Age 18-65: 89%</li>
+                        <li>Gender balanced: 52%/48%</li>
+                        <li>Urban/Rural: 67%/33%</li>
+                        <li>Education varied</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <h3>Analysis</h3>
+                    <ul>
+                        <li>Statistical significance: p < 0.05</li>
+                        <li>Confidence intervals: 95%</li>
+                        <li>Cross-validation performed</li>
+                        <li>Bias corrections applied</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="/assets/data.js"></script>
+</body>
+</html>
